@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="shortcut icon"
-      href="./assets/images/favicon.png"
+      href="./assets/images/logo.png"
       type="image/x-icon"
     />
     <title>PowerMeta</title>
@@ -15,20 +15,28 @@
   <body>
     <main class="wrapper">
       <header class="header">
-          <div class="header-logo">
-            <video width="120" height="100" autoplay muted loop>
-              <source src="./assets/videos/logo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="header-menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Explore</a></li>
-              <li><a href="#">Activity</a></li>
-              <li><a href="#">Connect Wallet</a></li>
-            </ul>
-          </div>
+        <div class="header-logo">
+          <video width="120" height="100" autoplay muted loop>
+            <source src="./assets/videos/logo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="header-menu menu">
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a href="#home" class="menu-list-btn">Home</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#explore" class="menu-list-btn">Explore</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#faq" class="menu-list-btn">FAQ</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#team" class="menu-list-btn">Team</a>
+            </li>
+          </ul>
+        </div>
       </header>
 
       <section class="home common">
@@ -40,23 +48,55 @@
           <img class="shape5" src="./assets/images/shape.svg" alt="shape" />
         </div>
 
-        <div class="home-inner">
-          <div class="text">
-            <h5>Power Meta NFT</h5>
-            <h1>NFT</h1>
-            <p>
-              Pharetra Beatae accumsan voluptaes. Anim vero consequat erat ac
-              eleifend dictumst! Adipisci expedita? Nullam tortor voluptatibus
-              dapibus tortor pariatur do.
-            </p>
-            <a href="#" class="btn">About us</a>
+        <div class="home-main">
+          <div class="home-main-section-1">
+            <div class="hero-card">
+              <h1 class="hero-header">
+                <span class="text-bold">Power</span
+                ><span class="text-primary text-bold">Meta</span> an Awesome
+                <span class="text-bold">Meme</span>
+                <span class="text-primary text-bold">Token</span>
+              </h1>
+              <p class="hero-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est,
+                quibusdam! Hic tempora dignissimos libero fuga eius nam tenetur
+                perspiciatis officia!
+              </p>
+            </div>
           </div>
-          <div class="img">
-            <img src="./images/img3.png" alt="" />
+          <div class="home-main-section-2">
+            <img src="./assets/images/logo.png" alt="main" class="hero-image" />
+          </div>
+        </div>
+      </section>
+      <section class="explore common" id="explore">
+        <h2 class="common-header">Explore</h2>
+        <div class="card-group">
+          <div class="card fade-in">
+            <div class="card-header">Crypto</div>
+            <div class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              tenetur!
+            </div>
+          </div>
+          <div class="card fade-in">
+            <div class="card-header">Meme Token</div>
+            <div class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              tenetur!
+            </div>
+          </div>
+          <div class="card fade-in">
+            <div class="card-header">NFT</div>
+            <div class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              tenetur!
+            </div>
           </div>
         </div>
       </section>
     </main>
     <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/test.js"></script>
   </body>
 </html>
