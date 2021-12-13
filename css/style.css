@@ -96,6 +96,13 @@ body {
   transition: all 1s ease-in;
 }
 
+@media only screen and (min-width: 768px) {
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .header {
   min-width: 100vw;
   display: flex;
@@ -191,7 +198,9 @@ body {
   list-style: none;
 }
 
-.menu ul li a:link,.menu ul li a:visited,.menu ul li a:active  {
+.menu ul li a:link,
+.menu ul li a:visited,
+.menu ul li a:active {
   text-decoration: none;
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -313,6 +322,7 @@ body {
 
 .explore {
   width: 100vw;
+  padding: 0 2rem;
   margin-bottom: 2rem;
 }
 
@@ -592,12 +602,12 @@ input {
 input:checked + .tab-label {
   background: rgba(9, 24, 48, 0.7);
 }
- 
+
 input:checked + .tab-label::after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
- 
+
 input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1rem;
