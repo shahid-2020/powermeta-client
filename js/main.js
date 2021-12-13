@@ -5,6 +5,11 @@ async function bootstrap() {
   toggler.addEventListener('click', () => {
     toggler.classList.toggle('active')
     menu.classList.toggle('active')
+    if (toggler.className.split(' ').includes('active')) {
+      toggler.style.setProperty('position', 'fixed')
+    } else {
+      toggler.style.setProperty('position', 'absolute')
+    }
   })
 
   const faders = document.querySelectorAll('.fade-in')
@@ -29,6 +34,14 @@ async function bootstrap() {
 
   faders.forEach((fader) => {
     appearOnScroll.observe(fader)
+  })
+
+  document.getElementById('main').addEventListener('click', (event) => {
+    if (toggler.className.split(' ').includes('active')) {
+      toggler.classList.remove('active')
+      menu.classList.remove('active')
+      toggler.style.setProperty('position', 'absolute')
+    }
   })
 }
 
