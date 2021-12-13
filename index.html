@@ -1,14 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
     <title>PowerMeta</title>
-</head>
-<body>
-    <h1>Power Meta</h1>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <video width="120" height="100" autoplay muted loop>
+          <source src="./assets/videos/logo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </header>
+
+    <nav class="nav" id="nav">
+      <div class="menu__toggler" id="menu__toggler">
+        <span></span>
+      </div>
+
+      <div class="menu navbar" id="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-list-item">
+            <a href="#home" class="navbar-list-link">Home</a>
+          </li>
+          <li class="navbar-list-item">
+            <a href="#explore" class="navbar-list-link">Explore</a>
+          </li>
+          <li class="navbar-list-item">
+            <a href="#roadmap" class="navbar-list-link">Roadmap</a>
+          </li>
+          <li class="navbar-list-item">
+            <a href="#team" class="navbar-list-link">Team</a>
+          </li>
+          <li class="navbar-list-item">
+            <a href="#faq" class="navbar-list-link">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-slide" id="nav-slide"></div>
+    </nav>
+    <div class="star-animation">
+      <div class="stars-01"></div>
+      <div class="stars-02"></div>
+      <div class="stars-03"></div>
+      <div class="stars-04"></div>
+    </div>
+    <main class="container" id="main">
+      <section class="home">
+        <div class="home__main">
+          <div class="home__main-section-1">
+            <div class="hero__card">
+              <h1 class="hero__card-header">
+                <span class="text-bold text-secondary">Power</span
+                ><span class="text-secondary">Meta</span> an Awesome
+                <span class="text-bold text-secondary">Meme</span>
+                <span class="text-bold">Token</span>
+              </h1>
+              <p class="hero__card-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est,
+                quibusdam! Hic tempora dignissimos libero fuga eius nam tenetur
+                perspiciatis officia!
+              </p>
+              <div class="social-media-container">
+                <a href="#" class="social-media-button">Join Telegram</a>
+                <a href="#" class="social-media-button">Follow on Twitter</a>
+              </div>
+            </div>
+          </div>
+          <div class="home__main-section-2"> 
+              <img src="./assets/images/rocket.png" alt="main" class="hero-image" />
+        </div>
+      </section>
+         <section class="explore" id="explore">
+        <h2 class="common-header">
+          <span class="text-secondary">Exp</span>lore
+        </h2>
+        <div class="card-group">
+          <div class="card">
+            <div class="card-header">Crypto</div>
+            <div class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              tenetur!
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Meme Token</div>
+            <div class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              tenetur!
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">NFT</div>
+            <div class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              tenetur!
+            </div>
+          </div>
+        </div>
+      </section>
+       <section class="roadmap" id="roadmap">
+        <h2 class="common-header">
+          Road<span class="text-secondary">map</span>
+        </h2>
+
+        <div class="timeline-container">
+          <div class="timeline">
+            <ul>
+              <li class="fade-in">
+                <div class="timeline-content">
+                  <h1>Heading 1</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur tempora ab laudantium voluptatibus aut eos
+                    placeat laborum, quibusdam exercitationem labore.
+                  </p>
+                </div>
+              </li>
+              <li class="fade-in">
+                <div class="timeline-content">
+                  <h1>Heading 2</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur tempora ab laudantium voluptatibus aut eos
+                    placeat laborum, quibusdam exercitationem labore.
+                  </p>
+                </div>
+              </li>
+              <li class="fade-in">
+                <div class="timeline-content">
+                  <h1>Heading 3</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur tempora ab laudantium voluptatibus aut eos
+                    placeat laborum, quibusdam exercitationem labore.
+                  </p>
+                </div>
+              </li>
+              <li class="fade-in">
+                <div class="timeline-content">
+                  <h1>Heading 4</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur tempora ab laudantium voluptatibus aut eos
+                    placeat laborum, quibusdam exercitationem labore.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+       <section class="team" id="team">
+        <h2 class="common-header">
+          Me<span class="text-secondary">et</span> our t<span
+            class="text-secondary"
+            >ea</span
+          >m
+        </h2>
+        <div class="profile-card-group">
+          <div class="profile-card">
+            <div class="profile-card-image">
+              <img
+                src="./assets/images/team1.jfif"
+                alt="team"
+                class="card-img"
+              />
+            </div>
+            <div class="profile-card-content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad,
+              rerum. Alias molestiae libero quam commodi sapiente repellat dolor
+              unde quasi!
+            </div>
+          </div>
+          <div class="profile-card scale-up">
+            <div class="profile-card-image">
+              <img
+                src="./assets/images/team1.jfif"
+                alt="team"
+                class="card-img"
+              />
+            </div>
+            <div class="profile-card-content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad,
+              rerum. Alias molestiae libero quam commodi sapiente repellat dolor
+              unde quasi!
+            </div>
+          </div>
+          <div class="profile-card">
+            <div class="profile-card-image">
+              <img
+                src="./assets/images/team1.jfif"
+                alt="team"
+                class="card-img"
+              />
+            </div>
+            <div class="profile-card-content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad,
+              rerum. Alias molestiae libero quam commodi sapiente repellat dolor
+              unde quasi!
+            </div>
+          </div>
+        </div>
+      </section>
+        <section class="faq" id="faq">
+        <h2 class="common-header">
+          Freq<span class="text-secondary">uent</span>ly As<span
+            class="text-secondary"
+            >ke</span
+          >d Ques<span class="text-secondary">tion</span>s
+        </h2>
+        <div class="tabs">
+          <div class="tab">
+            <input type="checkbox" id="chck1" />
+            <label class="tab-label" for="chck1"
+              >Lorem ipsum dolor sit amet.?</label
+            >
+            <div class="tab-content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Dignissimos, beatae! Quia praesentium quos laudantium cum
+              inventore libero tempora, ullam quisquam assumenda veniam.
+              Dignissimos deleniti, in eum impedit laborum quidem iure.
+            </div>
+          </div>
+          <div class="tab">
+            <input type="checkbox" id="chck2" />
+            <label class="tab-label" for="chck2"
+              >Lorem ipsum dolor sit amet.?</label
+            >
+            <div class="tab-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+              numquam ea, natus unde tempora at atque ratione eveniet in,
+              molestiae consectetur placeat minus! Cum voluptate eos quaerat et
+              commodi sequi!
+            </div>
+          </div>
+
+          <div class="tab">
+            <input type="checkbox" id="chck3" />
+            <label class="tab-label" for="chck3"
+              >Lorem ipsum dolor sit amet.?</label
+            >
+            <div class="tab-content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Assumenda dicta maxime quasi beatae ducimus soluta minus
+              dignissimos architecto. Minima laborum delectus possimus, impedit
+              beatae dicta itaque asperiores sapiente! Iste, molestias!
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer-text">© <span class="text-bold">PowerMeta</span> All Rights Reserved</p>
+    </footer>
     <script type="module" src="./js/main.js"></script>
-</body>
+  </body>
 </html>
+
